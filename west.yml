@@ -1,0 +1,17 @@
+# Copyright (c) 2022-2023 Golioth, Inc.
+# SPDX-License-Identifier: Apache-2.0
+
+manifest:
+  version: 0.8
+
+  projects:
+    - name: zephyr
+      path: zephyr
+      revision: v3.3.0
+      url: https://github.com/zephyrproject-rtos/zephyr.git
+      import:
+        file: west.yml
+        path-prefix: deps
+
+  self:
+    path: app
